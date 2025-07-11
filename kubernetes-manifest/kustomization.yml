@@ -1,0 +1,3 @@
+resources:
+  - hpa-nginx-frontend.yaml
+  - hpa-minio.yaml

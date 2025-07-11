@@ -1,0 +1,12 @@
+apiVersion: k3d.io/v1alpha4
+kind: Simple
+metadata:
+  name: multiserver
+servers: 3
+agents: 3
+options:
+  k3s:
+    extraArgs:
+      - arg: --disable=traefik@server:0
+        nodeFilters:
+          - server:*
